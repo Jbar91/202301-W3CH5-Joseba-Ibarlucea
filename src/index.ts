@@ -1,3 +1,4 @@
-console.log(1323);
+/* eslint-disable no-new */
+import { App } from './components/app/app';
 
-export const add = (a: number, b: number) => a + b;
+new App('body');
