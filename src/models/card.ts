@@ -3,7 +3,6 @@ export type CardStructure = {
   name: string;
   sprite: string;
   types: [];
-  isFavorite: boolean;
   description: string;
 };
 
