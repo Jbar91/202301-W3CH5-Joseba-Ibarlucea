@@ -16,6 +16,5 @@ export class Favorite extends Component {
 
   render(place: globalThis.InsertPosition) {
     super.render(place);
-    new Header('.container');
   }
 }
