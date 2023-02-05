@@ -1,11 +1,9 @@
 /* eslint-disable no-unused-vars */
 import { Component } from '../component/component';
+import './header.scss';
 
 export class Header extends Component {
-  constructor(
-    public selector: string,
-    public title: string = 'I wanna be the very best'
-  ) {
+  constructor(public selector: string, public title: string = "Catch 'Em All") {
     super();
     this.template = this.createTemplate();
     this.render('afterbegin');

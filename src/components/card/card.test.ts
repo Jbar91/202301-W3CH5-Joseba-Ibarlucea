@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 import { screen } from '@testing-library/dom';
 import '@testing-library/jest-dom';
 import { CardStructure } from '../../models/card';
@@ -7,8 +8,8 @@ describe('Given the Favorite component', () => {
   const pokeInfo: CardStructure = {
     id: 4,
     name: 'charmander',
-    sprite: 'ss',
-    types: [],
+    sprites: { front_default: '' },
+    types: [{ type: { name: '' } }],
     description: 'asads',
   };
   describe("When it's instantiated", () => {
