@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+* {
+  font-family: 'Orbitron', Arial, Helvetica, sans-serif;
+}
+
+.card {
+  border: 1px solid black;
+  width: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__sprite {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__info {
+    list-style: none;
+    font-size: 0.8rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+  }
+}
+
+.card:hover {
+  cursor: pointer;
+}
