@@ -1,5 +1,6 @@
 /* eslint-disable no-new */
 /* eslint-disable no-unused-vars */
+import { PokemonFetch } from '../../services/repository/poke.fetch.repo';
 import { CardsContainer } from '../cards-container/cards-container';
 import { Component } from '../component/component';
 
@@ -16,6 +17,6 @@ export class Home extends Component {
 
   render(place: globalThis.InsertPosition) {
     super.render(place);
-    new CardsContainer('.container');
+    new CardsContainer('.container', new PokemonFetch());
   }
 }
