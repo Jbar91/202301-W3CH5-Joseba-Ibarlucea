@@ -8,6 +8,8 @@ export type PokeApiType = {
 export interface PokeFetchRepoStructure {
   loadPokemons(): Promise<PokeApiType>;
   sortPokemons(): Promise<string[]>;
+  nextPokemons(): PokeApiType;
+  prevPokemons(): PokeApiType;
 }
 
 export class PokemonFetch {

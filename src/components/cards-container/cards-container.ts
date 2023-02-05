@@ -24,7 +24,6 @@ export class CardsContainer extends Component {
 
   async prevPokemons() {
     const prev = this.repo.prevPokemons() as Promise<PokeApiType>;
-    console.log(await prev);
     this.loadCards(prev);
   }
 
